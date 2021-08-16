@@ -1,0 +1,236 @@
+/* tag body*/
+
+body {
+    margin: 0;
+    /* Sem margens */
+    padding: 0;
+    /* Sem espaçamentos */
+    border: 0;
+    /* Sem bordas */
+    background-color: #f4f4f4;
+    /* Cor de fundo */
+    color: #666666;
+    /* Cor do texto */
+    font-family: "Source Sans Pro";
+    /* Fonte do texto */
+    font-size: 150%;
+    /* Tamanho da fonte */
+    font-weight: 200;
+    /* Espessura do texto */
+    line-height: 1, 65em;
+    /* Espaçamento do texto */
+}
+
+
+/* Elemento com id="Header" */
+
+#header {
+    background-image: url("../images/banner.jpg");
+    /* Imagem de fundo */
+    background-size: cover;
+    /* Para a imagem cobrir a tela o qto for possível */
+    background-color: #444444;
+    /* Cor de fundo caso a imagem 'banner.jpg' não carregue */
+    text-align: center;
+    /* Alinhamento do texto ao centro */
+    min-height: 100vh;
+    /* tamanho mínimo para cobrir a tela inteira na vertical */
+}
+
+
+/* Todos os elemntos com class="inner", dentro do elemento id="header" */
+
+#header .inner {
+    margin: auto;
+    /* Margem auto alinha os elementos 'inner' ao centro */
+    padding-top: 13%;
+    /* Espaçamento de 13% do top */
+    z-index: 1000;
+    /* posiçao relativa do eixo Z, para ficar na frente de todos os elemntos */
+}
+
+
+/* todos os H1s dentro do elemento com id="header" */
+
+#header h1 {
+    font-size: 2cm;
+    /* tamanho da fonte do h1 será de 2cm */
+    padding: 0em 0.5em 0em 0.25em;
+    /* Espaçamento top=0em rigth=0.5 bottom=0em left=0.25em */
+    font-family: "Source Sans Pro", sans-serif;
+    /* duas familias de fonte,uma títulas e uma reserva caso o usuario não possua a primeira fonte instalada em seu computer */
+    color: #ffffff;
+    /* cor do texto em hexadecimal */
+    font-weight: 900;
+    /* Espessura da fote, qto mais, mais grossa será a fonte */
+    line-height: 70px;
+    /* Define 70px para o tamanho da linha dessa tag h1 */
+    text-transform: uppercase;
+    /* Transforma todas as letras do texto em maiúsculas */
+}
+
+
+/* Todos os h3s dentro do elemento com id="header" */
+
+#header h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    /* duas familias de fonte,uma títulas e uma reserva caso o usuario não possua a primeira fonte instalada em seu computer */
+    color: #cccccc;
+    /* cor do texto em hexadecimal */
+    font-weight: 400;
+    /* Espessura da fote, qto mais, mais grossa será a fonte */
+    margin: 0;
+    /* retira qlq margem padrão da tag */
+    padding: 0;
+    /* retira qlq padding padrão da page */
+}
+
+
+/* tag nav dentro do elemento com id="header" */
+
+#header nav {
+    background-color: #000000;
+    /* cor de fundo em hexadecimal */
+    width: 100%;
+    /* largura 100% do tam da tela */
+    margin: 0 auto;
+    /* margem =0 acima e abaixo e automatico na horizontal para alinhar o elemnto ao centro */
+    padding-top: 15px;
+    /* padding de 15px acima da tag nav */
+    padding-bottom: 15px;
+    /* padding de 15px abaixo da tag nav */
+    z-index: 1000;
+    /* posiçao relativa ao eixo Z, para ficar na frente de tds os elementos */
+}
+
+
+/* tag <a> dentro da tag nav que, por sua vez, está em #header */
+
+#header nav a {
+    margin-right: 25px;
+    /* Margem de 25px a direita de tds os elementos com a tag <a>, contidos em #header */
+    color: #cccccc;
+    /* cor do texto em hexadecimal*/
+    font-weight: 600;
+    /* Espessura do texto em #header */
+}
+
+
+/* Elemento com id="intro" */
+
+#intro {
+    padding: 4em 4em 2em 4em;
+    /* Espaçamento: top=4em right=4em bottom=2em left=4em */
+    background-color: #ffffff;
+    /* cor de fundo em hexadecimal */
+    border-radius: 10px;
+    /* borda com 10px de arredondamento */
+    text-align: center;
+    /* texto alinhado ao centro */
+    margin-bottom: 4em;
+    /* margem inferior de 4em */
+    margin-top: 2em;
+    /* margem superior em 2em */
+}
+
+
+/* todas as tags com class="itens", em nosso caso, a seção com os ítens do conteúdo */
+
+.items {
+    display: flex;
+    /* define o tipo de caixa de renderizaçao usada pelo elemento */
+    width: calc(100% + 2em);
+    /* calculo de largura */
+    margin: -2em 0 0 -2em;
+    /* margem:top=2em right=0 bottom=0 left=-2em */
+}
+
+
+/* todos os elementos com class="item", declarados nas tags <article> */
+
+.item {
+    padding: 3em 3em 1em 3em;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+    margin: 50%;
+}
+
+
+/* todas as tags <header> dentro das classes item */
+
+.item header {
+    margin: -3em 0 3em -3em;
+    width: calc(100% + 6em);
+    height: 10em;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* todas as tags <a> dentro da tag header */
+
+.item header a {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* elemento com id="footer"  */
+
+#footer {
+    margin: 4em auto 0 auto;
+    width: 40em;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+/* elementos com class="button" */
+
+.button {
+    border-radius: 4px;
+    display: block;
+    font-weight: 400;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.325em;
+    font-size: 0.725em;
+    background-color: transparent;
+    border: 2px solid #9a9a9a;
+    color: #9a9a9a;
+}
+
+
+/* todas as tags <ul> */
+
+ul {
+    padding-left: 0;
+}
+
+
+/* todas as tags <li>, dentro da tag <ul> */
+
+ul li {
+    display: inline-block;
+}
+
+
+/* todas as tags <a> */
+
+a {
+    text-decoration: none;
+}
+
+
+/*  regras para tds as tags <a> e as tags <a> dentro da nevegaçao, para qdo o usuário passar o mouse por cima do link */
+
+#header nav a:hover,
+a:hover {
+    color: #ffc711;
+}
